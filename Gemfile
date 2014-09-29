@@ -16,3 +16,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "eventmachine", github: "eventmachine"
 
 gem "foreman"
+
+gem "slim"
