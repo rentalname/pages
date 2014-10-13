@@ -1,7 +1,12 @@
-.welcome
+.site-title
   h1 
-    | Middleman is Watching
-  p.doc
-    = link_to "Read Online Documentation", "http://middlemanapp.com/"
+    | Alumel Antenna
+ 
+.blogs
+  - Dir.chdir("source") do
+    - Dir.glob("blog/*").each do |path|
+      = partial path
+
+footer.blog.blog-footer
   p.doc
     = link_to "site source here", "https://github.com/rentalname/pages"
